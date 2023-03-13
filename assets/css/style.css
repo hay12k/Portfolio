@@ -13,8 +13,8 @@
     --text-color: #000;
     --second-color: #e5c8c8;
     --main-color: #f75023;
-    --big-font: 2rem;
-    --h2-font: 1rem;
+    --big-font: 3.4rem;
+    --h2-font: 1.5rem;
     --p-font: 1.1rem;
 }
 body{
@@ -101,6 +101,7 @@ section{
 .home{
     min-height: 100vh;
     height: 100%;
+    position: relative;
     width: 100%;
     background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%);
     background-blend-mode: overlay, screen, overlay, overlay, normal;
@@ -236,4 +237,10 @@ section{
     color: var(--main-color);
     font-size: 20px;
     font-weight: 500;
+}
+.about .about-text p{
+    max-width: 550px;
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 28px;
 }
