@@ -135,11 +135,12 @@ section{
 .home .social a{
     width: 35px;
     height: 35px;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--main-color);
+    background: transparent;
     color: var(--bg-color);
     font-size: 17px;
     margin-right: 22px;
@@ -147,8 +148,8 @@ section{
 }
 .home .social a:hover{
     transform: scale(1.1);
-    background: var(--bg-color);
-    color: var(--main-color);
+    background: var(--main-color);
+    color: var(--bg-color);
     transition: .5s ease;
 }
 .btn{
