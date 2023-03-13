@@ -36,6 +36,7 @@ header{
     background: transparent;
     transition: .3s;
     padding: 30px 10%;
+    z-index: 1000;
 }
 header.sticky{
     background: var(--header-color);
