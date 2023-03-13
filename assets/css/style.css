@@ -10,9 +10,8 @@
 :root{
     --color-danger: #f75023;
     --bg-color: #ffffff;
-    --text-color: #fff;
+    --text-color: #000;
     --second-color: #e5c8c8;
-    --header-color: #000000;
     --main-color: #f75023;
     --big-font: 2rem;
     --h2-font: 1rem;
@@ -39,7 +38,7 @@ header{
     z-index: 1000;
 }
 header.sticky{
-    background: var(--header-color);
+    background: var(--bg-color);
     padding: 13px 10%;
     box-shadow: 0px opx 10px rgba(0, 0, 0, 0.1);
 }
