@@ -139,19 +139,19 @@ section{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-color);
-    color: var(--main-color);
+    background: var(--main-color);
+    color: var(--bg-color);
     font-size: 17px;
     margin-right: 22px;
     margin-bottom: 30px;
 }
 .home .social a:hover{
     transform: scale(1.1);
-    background: var(--main-color);
-    color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--main-color);
     transition: .5s ease;
 }
-.home .btn{
+.btn{
     display: inline-block;
     color: var(--bg-color);
     background: var(--main-color);
