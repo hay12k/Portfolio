@@ -212,3 +212,27 @@ section{
 }
 /* ---------------------Animation Waves ends---------------------------- */
 
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-img img{
+    max-width: 100%;
+    width: 940px;
+    height: auto;
+}
+.about .about-text h2{
+    font-size: var(--h2-font);
+    font-family: 500;
+    margin: 8px 0px 25px;
+    line-height: 1.1;
+}
+.about .about-text{
+    padding-left: 87px;
+}
+.about .about-text h3{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
