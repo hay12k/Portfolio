@@ -397,4 +397,26 @@ section {
 .project-popup-inner{
     background-color: var(--color-dark);
     width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
 }
+.project-popup-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+.project-popup-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+
+
