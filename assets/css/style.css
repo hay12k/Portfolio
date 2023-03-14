@@ -392,6 +392,7 @@ section {
     align-items: center;
     padding: 0 1rem;
     z-index: 5;
+    opacity: 0;
     transition: .3s;
 }
 .project-popup-inner{
@@ -435,6 +436,17 @@ section {
     margin-bottom: .75s;
     text-transform: capitalize;
     font-size: var(--small-font-size);
+}
+.details-info li:last-child{
+    margin-bottom: 0;
+}
+.details-info li span{
+    font-size: normal;
+}
+.details-info li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
 }
 
 
