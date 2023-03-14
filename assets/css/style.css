@@ -393,7 +393,12 @@ section {
     padding: 0 1rem;
     z-index: 5;
     opacity: 0;
+    visibility: hidden;
     transition: .3s;
+}
+.project-popup.open{
+    opacity: 1;
+    visibility: visible;
 }
 .project-popup-inner{
     background-color: var(--color-dark);
