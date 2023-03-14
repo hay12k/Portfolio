@@ -131,7 +131,7 @@ section{
 }
 .home .home-text p{
    font-size: var(--p-font);
-   color: var(--second-color);
+   color: var(--color-dark);
    line-height: 28px;
    margin-bottom: 20px;
 }
@@ -251,7 +251,7 @@ section{
 }
 .service-info p{
     font-size: 16px;
-    color: var(--second-color);
+    color: var(--color-dark);
 }
 .about{
     display: flex;
@@ -280,11 +280,12 @@ section{
 .about .about-text p{
     max-width: 550px;
     font-size: var(--p-font);
-    color: var(--second-color);
+    color: var(--color-dark);
     line-height: 28px;
 }
 .project h1{
     font-size: 33px;
+    color: var(--text-color);
     text-align: center;
     margin-bottom: 15px;
 }
@@ -301,6 +302,8 @@ section{
     border-radius: .5rem;
 }
 .project-container .project-card img{
+    border-radius: .5rem;
+    
     width: 100%;
     height: auto;
 }
