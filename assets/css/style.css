@@ -9,6 +9,7 @@
 }
 :root{
     --color-danger: #f75023;
+    --color-dark: #898989;
     --bg-color: #ffffff;
     --text-color: #000;
     --second-color: #e5c8c8;
@@ -20,6 +21,7 @@
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 .danger{
     color: var(--color-danger);
@@ -229,7 +231,7 @@ section{
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
     border-radius: 9px;
-    background-color: #b09991;
+    background-color: var(--main-color);
     box-shadow: 0 6px 7px rgb(176 153 145 / 67%);
     text-align: center;
     margin: 0 auto 25px;
@@ -239,17 +241,17 @@ section{
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
-    color: #ffffff;
+    color: var(--bg-color);
 }
 .service-info h3{
     font-size: 24px;
-    color: #121158;
+    color: var(--text-color);
     font-weight: 700;
     margin: 0 0 7px;
 }
 .service-info p{
     font-size: 16px;
-    color: #515184;
+    color: var(--second-color);
 }
 .about{
     display: flex;
@@ -281,3 +283,28 @@ section{
     color: var(--second-color);
     line-height: 28px;
 }
+.project h1{
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.project-container .project-card{
+    background-color: var(--color-dark);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+.project-container .project-card img{
+    width: 100%;
+    height: auto;
+}
+.project-card .project-item-details{
+    display: none;
+}
+
