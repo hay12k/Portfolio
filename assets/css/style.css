@@ -213,7 +213,44 @@ section{
     }
 }
 /* ---------------------Animation Waves ends---------------------------- */
-
+.service{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.service-info{
+    padding: 15px;
+}
+.service-info .service-icon{
+    width: 60px;
+    height: 60px;
+    -khtml-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #b09991;
+    box-shadow: 0 6px 7px rgb(176 153 145 / 67%);
+    text-align: center;
+    margin: 0 auto 25px;
+}
+.service-info .service-icon i{
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+.service-info h3{
+    font-size: 24px;
+    color: #121158;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
+.service-info p{
+    font-size: 16px;
+    color: #515184;
+}
 .about{
     display: flex;
     justify-content: space-between;
