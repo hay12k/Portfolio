@@ -415,6 +415,40 @@ section {
     color: var(--main-color);
     cursor: pointer;
 }
+.project-popup-img{
+    border-radius: .5rem;
+}
+.project-popup-subtitle{
+    font-size: var(--smallest-font-size);
+    margin-bottom: .25rem;
+}
+.details-title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
