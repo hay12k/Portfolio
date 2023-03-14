@@ -458,9 +458,7 @@ section {
     background: var(--bg-color);
 }
 .contact-info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
     gap: 2.5rem;
 }
 .contact-info .contact-text h4{
