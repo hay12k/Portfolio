@@ -337,13 +337,6 @@ section {
     line-height: 28px;
 }
 
-.section-title{
-    font-size: 33px;
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 330px);
