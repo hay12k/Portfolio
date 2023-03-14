@@ -16,8 +16,8 @@ function toggleProjectPopup(){
 }
 document.querySelector(".project-popup-close").addEventListener("click", toggleProjectPopup)
 
-function projectItemDetails(projectitem){
-    document.querySelector(".pp-thumbnail img").src - projectitem.querySelector(".project-img").src;
-    document.querySelector(".project-popup-subtitle span").innerHTML = projectitem.querySelector(".project-title").innerHTML;
-    document.querySelector(".project-popup-body").innerHTML = projectitem.querySelector(".project-item-details").innerHTML;
+function projectItemDetails(Projectitem){
+    document.querySelector(".pp-thumbnail img").src - Projectitem.querySelector(".project-img").src;
+    document.querySelector(".project-popup-subtitle span").innerHTML = Projectitem.querySelector(".project-title").innerHTML;
+    document.querySelector(".project-popup-body").innerHTML = Projectitem.querySelector(".project-item-details").innerHTML;
 }
