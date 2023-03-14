@@ -8,8 +8,16 @@ window.addEventListener ("scroll", function(){
 document.addEventListener("click", (e) =>{
     if(e.target.classList.contains("project-bottom")){
         toggleProjectPopup();
+        projectItemDetails(e.target.parentElement);
     }
 });
 function toggleProjectPopup(){
     document.querySelector(".project-popup").classList.toggle("open");
+}
+document.querySelector(".project-popup-close").addEventListener("click", toggleProjectPopup)
+
+function projectItemDetails(projectitem){
+    document.querySelector(".pp-thumbnail img").src - projectitem.querySelector(".project-img").src;
+    document.querySelector(".project-popup-subtitle span").innerHTML = projectitem.querySelector(".project-title").innerHTML;
+    document.querySelector(".project-popup-body").innerHTML = projectitem.querySelector(".project-item-details").innerHTML;
 }

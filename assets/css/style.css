@@ -423,6 +423,7 @@ section {
 }
 .project-popup-img{
     border-radius: .5rem;
+    width: 100%;
 }
 .project-popup-subtitle{
     font-size: var(--smallest-font-size);
