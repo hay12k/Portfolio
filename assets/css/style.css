@@ -432,7 +432,9 @@ section {
     margin-bottom: 2rem;
 }
 .details-info li{
-    mar
+    margin-bottom: .75s;
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
 }
 
 
