@@ -427,6 +427,13 @@ section {
     font-weight: 500;
     margin-bottom: 1rem;
 }
+.details-description{
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+.details-info li{
+    mar
+}
 
 
 
