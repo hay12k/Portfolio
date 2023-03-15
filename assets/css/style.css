@@ -340,7 +340,9 @@ section {
     color: var(--color-dark);
     line-height: 28px;
 }
-
+.about-info .about-text .btn{
+    margin-top: 25px;
+}
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 330px);
