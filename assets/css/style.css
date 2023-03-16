@@ -502,7 +502,7 @@ header .navlist {
 @media (max-width: 767px) {
     .project-popup-inner{
         width: 420px;
-        padding: 1.8rem 1.5rem 2.5rem;
+        padding: 2.8rem 1.5rem 2.5rem;
     }
 }
 .project-popup-content{
@@ -524,6 +524,11 @@ header .navlist {
     font-size: 1.5rem;
     color: var(--main-color);
     cursor: pointer;
+}
+@media (max-width: 767px) {
+    .project-popup-close{
+       top: .2re5;
+    }
 }
 .project-popup-img{
     border-radius: .5rem;
