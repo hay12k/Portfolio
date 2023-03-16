@@ -379,6 +379,13 @@ header .navlist {
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 .about-info .about-img img {
     max-width: 100%;
@@ -393,9 +400,6 @@ header .navlist {
     line-height: 1.1;
 }
 
-.about-info .about-text {
-    padding-left: 87px;
-}
 
 .about-info .about-text h3 {
     color: var(--main-color);
