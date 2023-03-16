@@ -336,8 +336,6 @@ header .navlist {
         flex-basis: 48%;
     }
 }
-
-
 @media (max-width: 767px) {
     .service-info{
         flex-basis: 100%;
@@ -527,7 +525,7 @@ header .navlist {
 }
 @media (max-width: 767px) {
     .project-popup-close{
-       top: .2re5;
+       top: .5rem;
     }
 }
 .project-popup-img{
