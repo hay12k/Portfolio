@@ -67,6 +67,17 @@ body {
     color: var(--text-color);
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: 3px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 46.6%;
+    transition: .4s ease;
 }
 .danger {
     color: var(--color-danger);
