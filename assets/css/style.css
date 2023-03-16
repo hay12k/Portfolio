@@ -553,6 +553,13 @@ header .navlist {
     display: flex;
     gap: 2.5rem;
 }
+@media (max-width: 767px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .contact-info .contact-text h4{
     color: var(--text-color);
     margin: 18px 0;
