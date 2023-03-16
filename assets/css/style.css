@@ -685,6 +685,15 @@ form textarea{
 .contact-info form .submit:hover{
     transform: scale(1.1);
 }
+footer{
+    border-top: 1px solid var(--text-color);
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+}
 
 
 
