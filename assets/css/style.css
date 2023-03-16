@@ -499,11 +499,23 @@ header .navlist {
     padding: 2.5rem;
     position: relative;
 }
+@media (max-width: 767px) {
+    .project-popup-inner{
+        width: 420px;
+        padding: 1.8rem 1.5rem 2.5rem;
+    }
+}
 .project-popup-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     column-gap: 3rem;
+}
+@media (max-width: 767px) {
+    .project-popup-content{
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }
 }
 .project-popup-close{
     position: absolute;
@@ -525,6 +537,11 @@ header .navlist {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+    .details-title{
+       font-size: var(--smallest-font-size);
+    }
 }
 .details-description{
     font-size: var(--small-font-size);
