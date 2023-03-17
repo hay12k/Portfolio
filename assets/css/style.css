@@ -223,10 +223,15 @@ header .navlist {
     background-size: cover;
     background-position: center;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    padding-top: 120px;
-    justify-content: center;
+    padding: 2rem 10%;
+}
+@media (max-width: 767px) {
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 7rem 2%;
+    }
 }
 
 .home .home-text h1 {
@@ -392,12 +397,7 @@ header .navlist {
     float: left;
 }
 
-@media (max-width: 767px) {
-    .home{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
+
 
 .editorial-border .parallax>use {
     animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
