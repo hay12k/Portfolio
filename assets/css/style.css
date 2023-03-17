@@ -701,6 +701,9 @@ header .navlist {
         width: 100%;
     }
 }
+.skills-info  .skills-box h3{
+    color: var(--text-color);
+}
 .container-skills{
     position: relative;
     max-width: 500px;
