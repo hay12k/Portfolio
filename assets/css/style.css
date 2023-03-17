@@ -113,6 +113,19 @@ header.sticky #menu-icon{
 header .logo h3 {
     font-size: 30px;
     color: var(--bg-color);
+    opacity: 0;
+    animation: sliderRight 1s ease forwards;
+}
+@keyframes sliderRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
 }
 
 header .navlist {
@@ -131,10 +144,26 @@ header .navlist {
 }
 
 .navlist a {
+    display: inline-block;
     color: var(--bg-color);
     font-size: var(--p-font);
     font-weight: 500;
     padding: 10px 27px;
+    transition: .3s;
+    opacity: 0;
+    animation: sliderTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes sliderTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
 /* .navlist a.active{
     color: var(--main-color);
@@ -206,12 +235,18 @@ header .navlist {
     line-height: 1;
     font-weight: 500;
     color: var(--bg-color);
+    opacity: 0;
+    animation: sliderRight 1s ease forwards;
+    animation-delay: .2s;
 }
 
 .home .home-text h3 {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 500;
+    opacity: 0;
+    animation: sliderBottom 1s ease forwards;
+    animation-delay: .2s;
 }
 
 .home .home-text h5 {
@@ -219,13 +254,40 @@ header .navlist {
     font-size: 19px;
     font-weight: 500;
     color: #ddd;
+    opacity: 0;
+    animation: sliderTop 1s ease forwards;
+    animation-delay: .2s;
 }
-
+@keyframes sliderBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
 .home .home-text p {
     font-size: var(--p-font);
     color: var(--color-dark);
     line-height: 28px;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards;
+    animation-delay: .4s;
+}
+@keyframes sliderLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -246,6 +308,10 @@ header .navlist {
     font-size: 17px;
     margin-right: 22px;
     margin-bottom: 30px;
+    transition: .5s ease;
+    opacity: 0;
+    animation: sliderLeft .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 
@@ -265,6 +331,9 @@ header .navlist {
     line-height: 24px;
     border-radius: 30px;
     transition: .4s ease;
+    opacity: 0;
+    animation: sliderTop .7s ease forwards;
+    animation-delay: 2s;
 }
 
 .btn:hover {
@@ -275,8 +344,33 @@ header .navlist {
     max-width: 100%;
     width: 380px;
     height: auto;
+    opacity: 0;
+    animation: zoomIn .7s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 1s, 3s;
 }
-
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
 @media (max-width: 767px) {
     .home .home-img img{
         width: 300px;
