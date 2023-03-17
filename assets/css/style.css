@@ -684,10 +684,22 @@ header .navlist {
 }
 .skills-info {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+}
+@media (max-width: 767px) {
+    .skills-info{
+        flex-basis: 45%;
+    }
 }
 .skills-info  .skills-box{
     width: 45%;
+}
+@media (max-width: 767px) {
+    .skills-info  .skills-box{
+        width: 100%;
+    }
 }
 .container-skills{
     position: relative;
@@ -731,7 +743,7 @@ header .navlist {
     width: 70%;
 }
 .skills-bar .skills-per.Javascript{
-    width: 40%;
+    width: 30%;
 }
 @keyframes progress {
     0%{
