@@ -535,8 +535,6 @@ header .navlist {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(3, 330px); */
     gap: 1.8rem;
     justify-content: center;
     padding-top: 1rem;
@@ -691,6 +689,7 @@ header .navlist {
     display: flex;
     gap: 2.5rem;
 }
+
 @media (max-width: 767px) {
     .contact-info {
         display: flex;
