@@ -225,6 +225,7 @@ header .navlist {
     display: flex;
     align-items: center;
     padding: 2rem 10%;
+    gap: 2.8rem;
 }
 @media (max-width: 767px) {
     .home{
