@@ -263,7 +263,9 @@ header .navlist {
         padding: 7rem 2%;
     }
 }
-
+.home .home-text{
+    flex-basis: 45%;
+}
 .home .home-text h1 {
     margin: 10px 0px 25px;
     font-size: var(--big-font);
@@ -374,7 +376,10 @@ header .navlist {
 .btn:hover {
     transform: scale(1.1);
 }
-
+.home .home-img{
+    flex-basis: 45%;
+    text-align: center;
+}
 .home .home-img img {
     max-width: 100%;
     width: 380px;
