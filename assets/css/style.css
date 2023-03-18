@@ -886,11 +886,15 @@ form textarea{
     padding: 14px;
     background: var(--bg-color);
     color: var(--text-color);
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--color-dark);
     outline: none;
     font-size: 15px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+.contact-form form input:focus,
+form textarea:focus{
+    border: 2px solid var(--main-color);
 }
 .contact-info form input::placeholder,
 .contact-info form textarea::placeholder{
