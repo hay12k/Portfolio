@@ -149,7 +149,19 @@ header .navlist {
     font-weight: 500;
     padding: 10px 27px;
     transition: .3s;
-   
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 @media (max-width: 991px) {
     header .navlist a{

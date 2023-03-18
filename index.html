@@ -8,6 +8,8 @@
     <title>Portfolio</title>
     <!-- -------------style css----------------- -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- -------------AOS CDN----------------- -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <!-- -------------BOXINCONS CDN----------------- -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- -------------Google Fonts----------------- -->
@@ -20,11 +22,11 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="#index.html" class="logo">
-            <h3>Hay<span class="danger">12k</span></h3>
+        <a href="#index.html"  class="logo" >
+            <h3 data-aos="fade-right" data-aos-duration="2000">Hay<span class="danger">12k</span></h3>
         </a>
         <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navlist" id="navlist">
+        <ul class="navlist" id="navlist" data-aos="fade-up" data-aos-duration="2000">
             <li class="li"><a href="#home" class="active" style="--i:1;">Home</a></li>
             <li class="li"><a href="#service" style="--i:2;">Service</a></li>
             <li class="li"><a href="#about" style="--i:3;">About</a></li>
@@ -38,19 +40,19 @@
     <!-- -------------Home----------------- -->
     <section class="home" id="home">
         <div class="home-text">
-            <h3>Hello, I'm</h3>
-            <h1>Mohamed Ali</h1>
-            <h5>A Creative Design <span class="danger">From Somalia</span></h5>
-            <p>I'm creative design based in Somalia, and I'm very passionate <br>and dedicated to my work.</p>
-            <div class="social">
-                <a href="https://www.facebook.com/calihayaan2" style="--i:8;"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/cali_hayaan" style="--i:9;"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.twitter.com/calihayaan1" style="--i:10;"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.linkedin.com/in/calihayaan" style="--i:11;"><i class='bx bxl-linkedin'></i></a>
+            <h3 data-aos="fade-up" data-aos-duration="2000">Hello, I'm</h3>
+            <h1 data-aos="fade-right" data-aos-duration="2000">Mohamed Ali</h1>
+            <h5 data-aos="fade-down" data-aos-duration="2000">A Creative Design <span class="danger">From Somalia</span></h5>
+            <p data-aos="fade-left" data-aos-duration="2000">I'm creative design based in Somalia, and I'm very passionate <br>and dedicated to my work.</p>
+            <div class="social" data-aos="fade-up" data-aos-duration="2000">
+                <a href="https://www.facebook.com/calihayaan2"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/cali_hayaan"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.twitter.com/calihayaan1"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/calihayaan"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#about" class="btn">About Me</a>
+            <a href="#about" class="btn" data-aos="fade-down" data-aos-duration="2000">About Me</a>
         </div>
-        <div class="home-img">
+        <div class="home-img" data-aos="fade-left" data-aos-duration="2000">
             <img src="./assets/img/profile.png" alt="">
         </div>
         <svg class="editorial-border" preserveAspectRatio="none" viewBox="0 24 150 28 "
@@ -72,7 +74,7 @@
     <section class="service" id="service">
         <h1 class="section-title">Service</h1>
         <div class="service-details">
-            <div class="service-info">
+            <div class="service-info" data-aos="zoom-out-right" data-aos-duration="2000">
                 <div class="service-icon">
                     <i class='bx bx-window-alt'></i>
                 </div>
@@ -80,7 +82,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi ducimus rem aperiam maiores
                     consequatur!</p>
             </div>
-            <div class="service-info">
+            <div class="service-info" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="service-icon">
                     <i class='bx bx-code-block'></i>
                 </div>
@@ -88,7 +90,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi ducimus rem aperiam maiores
                     consequatur!</p>
             </div>
-            <div class="service-info">
+            <div class="service-info" data-aos="zoom-out-left" data-aos-duration="2000">
                 <div class="service-icon">
                     <i class='bx bx-rocket'></i>
                 </div>
@@ -102,10 +104,10 @@
     <section class="about" id="about">
         <h1 class="section-title">About</h1>
         <div class="about-info">
-            <div class="about-img">
+            <div class="about-img" data-aos="slide-right" data-aos-duration="2000">
                 <img src="./assets/img/profile.png" alt="">
             </div>
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-left" data-aos-duration="2000">
                 <h3>I'm a Full Stack Developer</h3>
                 <h2>I Can Design Anything You Went</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iure! Deserunt minus
@@ -118,7 +120,7 @@
     <section class="project" id="projects">
         <h1 data-heading="my portfolio" class="section-title">Projects</h1>
         <div class="project-container container gride">
-            <div class="project-card">
+            <div class="project-card" data-aos="slide-left" data-aos-duration="2000">
                 <img src="./assets/img/pro-1.png" alt="" class="project-img">
                 <h3 class="project-title">Web Design</h3>
                 <span class="project-bottom">
@@ -139,7 +141,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./assets/img/pro-2.png" alt="" class="project-img">
                 <h3 class="project-title">Web Design</h3>
                 <span class="project-bottom">
@@ -160,7 +162,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="slide-right" data-aos-duration="2000">
                 <img src="./assets/img/pro-3.png" alt="" class="project-img">
                 <h3 class="project-title">Web Development</h3>
                 <span class="project-bottom">
@@ -181,7 +183,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-right" data-aos-duration="2000">
                 <img src="./assets/img/pro-4.png" alt="" class="project-img">
                 <h3 class="project-title">Brand Promotion</h3>
                 <span class="project-bottom">
@@ -201,7 +203,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="slide-up" data-aos-duration="2000">
                 <img src="./assets/img/pro-5.png" alt="" class="project-img">
                 <h3 class="project-title">Web Design</h3>
                 <span class="project-bottom">
@@ -222,7 +224,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-left" data-aos-duration="2000">
                 <img src="./assets/img/pro-6.png" alt="" class="project-img">
                 <h3 class="project-title">App Design</h3>
                 <span class="project-bottom">
@@ -328,7 +330,7 @@
     <section class="skills" id="skills">
         <h1 data-heading="my portfolio" class="section-title">Skills</h1>
         <div class="skills-info">
-            <div class="skills-box">
+            <div class="skills-box" data-aos="fade-up-left" data-aos-duration="2000">
                 <h3>Technical Skills</h3>
                 <div class="container-skills">
                     <div class="card-skills">
@@ -381,13 +383,13 @@
                     </div>
                 </div>
             </div>
-            <div class="skills-box">
+            <div class="skills-box" data-aos="fade-up-right" data-aos-duration="2000">
                 <h3>Professional Skills</h3>
                     <div class="container-skills">
                         <div class="card-skills">
                             <span class="title">Project Management</span>
                             <div class="skills-bar">
-                                <span class="skills-per php">
+                                <span class="skills-per php" >
                                     <span class="tooltip">85%</span>
                                 </span>
                             </div>
@@ -426,7 +428,7 @@
     <section class="contact" id="contacts">
         <h1 data-heading="my portfolio" class="section-title">Contact</h1>
         <div class="contact-info">
-            <div class="contact-text">
+            <div class="contact-text" data-aos="slide-right" data-aos-duration="2000">
                 <h4>If You Have Any Project In Your Mind.</h4>
                 <p>I'm a Designer - creating bold & brave interface design for companies all across the world.</p>
                 <div class="contact-links">
@@ -441,7 +443,7 @@
                     <a href="https://www.linkedin.com/in/calihayaan"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="slide-left" data-aos-duration="2000">
                 <form action="https://formspree.io/f/xzbqvlep" method="post">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
@@ -458,6 +460,11 @@
         <p>2023 © Hay<span class="danger">12k</span> All Right Reserved.</p>
     </footer>
 
+    <!-- -------------AOS js----------------- -->
+    <script src="./assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- -------------MixItUp js----------------- -->
     <script src="./assets/js/mixitup.min.js"></script>
     <!-- -------------javascript----------------- -->
