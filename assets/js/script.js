@@ -1,14 +1,13 @@
-// ------Active navlist-----------
-var btnContainer = document.getElementById("navlist");
-var li = btnContainer.getElementsByClassName("li");
-
-for (var i = 0; i < li.length; i++) {
-    li[i].addEventListener('click', function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace("active");
-        this.className += "active";
-    })
+// ------Active menu bar-----------
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+menu.onclick = ()=>{
+    menu.classList.toggle('bx-x');
+    navlist.classList.toggle('active');
 }
+
+// ------Active navlist-----------
+
 // ------background visibale When scroll down-----------
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {

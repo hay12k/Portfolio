@@ -110,6 +110,7 @@ header.sticky #menu-icon{
     color: var(--text-color);
     font-family: 500;
 }
+
 header .logo h3 {
     font-size: 30px;
     color: var(--bg-color);
@@ -134,9 +135,18 @@ header .navlist {
 
 @media (max-width: 991px) {
     header .navlist {
-        display: none;
-    }
-    
+        display: block;
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        background: var(--main-color);
+        text-align: right;
+        transition: all .4s;
+    }  
+    header .navlist.active{
+        top: 100%;
+    } 
 }
 
 .navlist li {
@@ -153,6 +163,14 @@ header .navlist {
     opacity: 0;
     animation: sliderTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+}
+@media (max-width: 991px) {
+    header .navlist a{
+       display: block;
+       padding: 1.2rem;
+       margin: 1.5rem;
+       border-right: 2px solid var(--bg-color);
+    }   
 }
 @keyframes sliderTop {
     0%{
@@ -187,8 +205,19 @@ header .navlist {
     left: 0;
     transition: .4s ease;
 }
+@media (max-width: 991px) {
+    .navlist a::after{
+        display: none;
+    }   
+}
 .navlist a:hover{
     color: var(--main-color);
+}
+@media (max-width: 991px) {
+    .navlist a:hover{
+        background: var(--bg-color);
+        color: var(--main-color);
+    }   
 }
 .navlist a:hover::after {
     width: 100%;
