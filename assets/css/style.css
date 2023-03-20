@@ -603,7 +603,7 @@ header .navlist {
 }
 
 .project-card .project-title {
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: var(--normal-font-size);
     font-weight: 600;
     margin-bottom: 0.5rem;
