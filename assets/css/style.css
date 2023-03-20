@@ -782,6 +782,10 @@ header .navlist {
 .skills-bar .skills-per.Javascript{
     width: 30%;
 }
+.skills-bar .skills-per.Photoshop{
+    width: 40%;
+}
+
 @keyframes progress {
     0%{
         width: 0;
