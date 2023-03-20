@@ -910,6 +910,7 @@ form textarea:focus{
     color: var(--bg-color);
     width: 160px;
     transition: all.45s ease;
+    border: none;
 }
 .contact-info form .submit:hover{
     transform: scale(1.1);
