@@ -576,7 +576,7 @@ header .navlist {
 
 .project-container .project-card {
     flex-basis: 30%;
-    background-color: var(--color-dark);
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
     padding: 1.25rem;
     border-radius: .5rem;
 }
