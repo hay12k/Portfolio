@@ -483,6 +483,7 @@ header .navlist {
     padding: 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 2px;
+    transition: all .3s;
 }
 @media (max-width: 991px) {
     .service-info{
@@ -494,7 +495,9 @@ header .navlist {
         flex-basis: 100%;
     }
 }
-
+.service-info:hover{
+    transform: scale(1.1);
+}
 .service-info .service-icon {
     width: 60px;
     height: 60px;
@@ -641,7 +644,8 @@ header .navlist {
     visibility: visible;
 }
 .project-popup-inner{
-    background-color: var(--color-dark);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     width: 900px;
     border-radius: .5rem;
     padding: 2.5rem;
