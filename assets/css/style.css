@@ -111,6 +111,12 @@ header.sticky #menu-icon{
     font-family: 500;
 }
 
+header.sticky .navlist a.active,
+header.sticky .navlist a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
 header .logo h3 {
     font-size: 30px;
     color: var(--bg-color);
@@ -159,7 +165,7 @@ header .navlist {
     font-size: var(--p-font);
     font-weight: 500;
     padding: 10px 27px;
-    transition: .3s;
+    transition: .1s;
     opacity: 0;
     animation: sliderTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
@@ -183,7 +189,7 @@ header .navlist {
     }
     
 }
-/* .navlist a.active{
+.navlist a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
     bottom: 0;
@@ -193,9 +199,10 @@ header .navlist {
 }
 .navlist a:hover{
     color: var(--main-color);
-} */
+}
 
-.navlist a::after {
+/* .navlist a::after,
+.navlist a.active::after {
     content: '';
     position: absolute;
     width: 0;
@@ -204,21 +211,22 @@ header .navlist {
     bottom: -3px;
     left: 0;
     transition: .4s ease;
-}
+} */
 @media (max-width: 991px) {
     .navlist a::after{
         display: none;
     }   
 }
-.navlist a:hover{
+.navlist a:hover,
+.navlist a.active{
     color: var(--main-color);
 }
-@media (max-width: 991px) {
-    .navlist a:hover{
-        background: var(--bg-color);
-        color: var(--main-color);
-    }   
-}
+
+/* .navlist a:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+}  */
+
 .navlist a:hover::after {
     width: 100%;
 }
