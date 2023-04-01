@@ -13,6 +13,7 @@
 :root {
     --color-danger: #f75023;
     --color-dark: #898989;
+    --black: #000;
     --bg-color: #ffffff;
     --text-color: #000;
     --second-color: #e5c8c8;
@@ -126,7 +127,11 @@ header.sticky .navlist a:hover {
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
 }
-
+@media (max-width: 991px){
+    header.sticky .navlist a.active{
+        color: var(--black);
+    }
+}
 header .logo h3 {
     font-size: 30px;
     color: var(--bg-color);
@@ -207,7 +212,7 @@ header .navlist {
 }
 
 .navlist a.active {
-    color: var(--bg-color);
+    color: var(--color-dark);
     border-bottom: 3px solid var(--main-color);
     bottom: 0;
     border-radius: 1px;
@@ -218,17 +223,7 @@ header .navlist {
     color: var(--main-color);
 }
 
-/* .navlist a::after,
-.navlist a.active::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--main-color);
-    bottom: -3px;
-    left: 0;
-    transition: .4s ease;
-} */
+
 @media (max-width: 991px) {
     .navlist a::after {
         display: none;
@@ -246,10 +241,6 @@ header .navlist {
     }
 }
 
-/* .navlist a:hover{
-    background: var(--bg-color);
-    color: var(--main-color);
-}  */
 
 .navlist a:hover::after {
     width: 100%;
