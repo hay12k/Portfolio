@@ -210,7 +210,6 @@ header .navlist {
     color: var(--bg-color);
     border-bottom: 3px solid var(--main-color);
     bottom: 0;
-    width: 100%;
     border-radius: 1px;
     transition: .5s ease;
 }
@@ -239,6 +238,12 @@ header .navlist {
 .navlist a:hover,
 .navlist a.active {
     color: var(--main-color);
+}
+@media (max-width: 991px){
+    .navlist a:hover,
+    .navlist a.active{
+        color: #000;
+    }
 }
 
 /* .navlist a:hover{
