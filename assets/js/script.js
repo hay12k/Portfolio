@@ -43,3 +43,6 @@ function projectItemDetails(projectItem) {
     document.querySelector(".project-popup-subtitle span").innerHTML = projectItem.querySelector(".project-title").innerHTML;
     document.querySelector(".project-popup-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
+window.onscroll = ()=>{
+    document.querySelector(".project-popup").classList.remove("open");
+};
