@@ -274,7 +274,11 @@ header .navlist {
     padding: 2rem 10%;
     gap: 2.8rem;
 }
-
+@media (max-width: 991px) {
+    .home {
+        min-height: 80vh;
+    }
+}
 @media (max-width: 767px) {
     .home {
         display: flex;
