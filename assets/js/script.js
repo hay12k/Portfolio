@@ -43,3 +43,16 @@ function projectItemDetails(projectItem) {
     document.querySelector(".project-popup-subtitle span").innerHTML = projectItem.querySelector(".project-title").innerHTML;
     document.querySelector(".project-popup-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
 }
+
+// animation 
+
+const sr = ScrollReveal({
+    distance: '45px',
+    duration: 2700,
+    reset: true
+})
+
+sr.reveal('.service-details,.skills-info,.card-2',{delay:350, origin: 'bottom' })
+sr.reveal('.section-title',{delay:350, origin: 'top' })
+sr.reveal('.contact-text,.about-img,.card-1',{delay:350, origin: 'left' })
+sr.reveal('.about-text,.card-3,.contact-form',{delay:350, origin: 'right' })
