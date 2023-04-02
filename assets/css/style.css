@@ -134,8 +134,8 @@ header.sticky .navlist a:hover {
 header .logo h3 {
     font-size: 30px;
     color: var(--bg-color);
-    /* opacity: 0; */
-    /* animation: sliderRight 1s ease forwards; */
+    opacity: 0;
+    animation: sliderRight 1s ease forwards;
 }
 
 @keyframes sliderRight {
@@ -306,9 +306,9 @@ header .navlist {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 500;
-    /* opacity: 0;
+    opacity: 0;
     animation: sliderBottom 1s ease forwards;
-    animation-delay: .2s; */
+    animation-delay: .2s;
 }
 
 .home .home-text h5 {
