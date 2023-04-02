@@ -122,7 +122,6 @@ header.sticky #menu-icon {
     }
 }
 
-header.sticky .navlist a.active,
 header.sticky .navlist a:hover {
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
@@ -211,33 +210,24 @@ header .navlist {
 
 }
 
-.navlist a.active {
-    color: var(--color-dark);
-    border-bottom: 3px solid var(--main-color);
-    bottom: 0;
-    border-radius: 1px;
-    transition: .5s ease;
-}
 
 .navlist a:hover {
     color: var(--main-color);
 }
-
+.navlist a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
 
 @media (max-width: 991px) {
     .navlist a::after {
         display: none;
-    }
-}
-
-.navlist a:hover,
-.navlist a.active {
-    color: var(--main-color);
-}
-@media (max-width: 991px){
-    .navlist a:hover,
-    .navlist a.active{
-        color: #000;
     }
 }
 
