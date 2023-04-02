@@ -214,6 +214,11 @@ header .navlist {
 .navlist a:hover {
     color: var(--main-color);
 }
+@media (max-width: 991px){
+    .navlist a:hover {
+        background: var(--bg-color);
+    }
+}
 .navlist a::after {
     content: '';
     position: absolute;
