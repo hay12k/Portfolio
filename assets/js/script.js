@@ -54,5 +54,5 @@ const sr = ScrollReveal({
 
 sr.reveal('.service-details,.card-2',{delay:350, origin: 'bottom' })
 sr.reveal('.section-title',{delay:350, origin: 'top' })
-sr.reveal('.contact-text,.about-img,.card-1,.skill-1',{delay:350, origin: 'left' })
-sr.reveal('.about-text,.card-3,.contact-form,.skill-2',{delay:350, origin: 'right' })
+sr.reveal('.contact-text,.about-img,.card-1,.skill-1',{delay:200, origin: 'left' })
+sr.reveal('.about-text,.card-3,.contact-form,.skill-2',{delay:200, origin: 'right' })
