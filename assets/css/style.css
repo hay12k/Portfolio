@@ -525,6 +525,7 @@ header .navlist {
 .service-info:hover{
     cursor: pointer;
     box-shadow: 0 0 50px var(--main-color);
+    transform: translateY(-10px) scale(1.03);
 }
 
 @media (max-width: 991px) {
@@ -540,7 +541,7 @@ header .navlist {
 }
 
 .service-info:hover {
-    transform: scale(1.1);
+    
 }
 
 .service-info .service-icon {
