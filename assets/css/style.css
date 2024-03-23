@@ -520,6 +520,7 @@ header .navlist {
     flex-basis: 32%;
     padding: 15px;
     border-radius: 3px;
+    border: 1px solid rgba(238,238,238,0.2);
     transition: ease .40s;
 }
 .service-info:hover{
