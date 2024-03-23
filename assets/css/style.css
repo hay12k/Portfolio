@@ -524,7 +524,7 @@ header .navlist {
 }
 .service-info:hover{
     cursor: pointer;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgb(247, 80, 35,0.2) 0px 7px 29px 0px;
 }
 
 @media (max-width: 991px) {
