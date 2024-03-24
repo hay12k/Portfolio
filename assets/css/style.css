@@ -11,13 +11,14 @@
 }
 
 :root {
-    --color-danger: #f75023;
+    --color-danger: #00ffee;
     --color-dark: #898989;
     --black: #000;
-    --bg-color: #ffffff;
-    --text-color: #000;
+    --body:#000;
+    --bg-color: #000;
+    --text-color: #fff;
     --second-color: #e5c8c8;
-    --main-color: #f75023;
+    --main-color: #00ffee;
     --big-font: 3rem;
     --h2-font: 1.5rem;
     --p-font: 1.1rem;
@@ -59,7 +60,7 @@ section {
 /* End Global Rules */
 
 body {
-    background: var(--bg-color);
+    background: var(--body);
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -133,7 +134,7 @@ header.sticky .navlist a:hover {
 }
 header .logo h3 {
     font-size: 30px;
-    color: var(--bg-color);
+    color: var(--text-color);
     opacity: 0;
     animation: sliderRight 1s ease forwards;
 }
@@ -178,7 +179,7 @@ header .navlist {
 
 .navlist a {
     display: inline-block;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: var(--p-font);
     font-weight: 500;
     padding: 10px 27px;
@@ -296,7 +297,7 @@ header .navlist {
     font-size: var(--big-font);
     line-height: 1;
     font-weight: 500;
-    color: var(--bg-color);
+    color: var(--text-color);
     opacity: 0;
     animation: sliderRight 1s ease forwards;
     animation-delay: .2s;
@@ -404,7 +405,9 @@ header .navlist {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 50px var(--main-color);
+    transform: translateY(-10px) scale(1.03);
 }
 
 .home .home-img {
@@ -519,8 +522,8 @@ header .navlist {
 .service-info {
     flex-basis: 32%;
     padding: 15px;
-    border-radius: 3px;
-    border: 1px solid rgba(238,238,238,0.2);
+    border-radius: 6px;
+    border: 3px solid rgb(0, 255, 238,0.2);
     transition: ease .40s;
 }
 .service-info:hover{
@@ -541,9 +544,7 @@ header .navlist {
     }
 }
 
-.service-info:hover {
-    
-}
+
 
 .service-info .service-icon {
     width: 60px;
@@ -618,6 +619,7 @@ header .navlist {
 .about-info .about-text .btn {
     margin-top: 25px;
 }
+
 
 .project-container {
     display: flex;
@@ -985,7 +987,9 @@ header .navlist {
 }
 
 .contact-text .contact-icons i:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 50px var(--main-color);
+    transform: scale(1.03);
 }
 
 .contact-info .contact-form {
@@ -1031,7 +1035,9 @@ form textarea:focus {
 }
 
 .contact-info form .submit:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 50px var(--main-color);
+    transform:  scale(1.03);
 }
 
 footer {
@@ -1039,9 +1045,12 @@ footer {
     padding: 10px;
 }
 
-footer p a{
-    color: #000;
+footer p {
+    color: var(--second-color);
     text-align: center;
     font-size: 15px;
     font-weight: 400;
+}
+footer p a{
+    color: var(--main-color);
 }
