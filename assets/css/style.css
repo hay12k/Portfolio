@@ -714,6 +714,7 @@ header .navlist {
     border-radius: .5rem;
     padding: 2.5rem;
     position: relative;
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
 }
 
 @media (max-width: 767px) {
