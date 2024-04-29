@@ -704,6 +704,7 @@ header .navlist {
 .project-popup.open {
     opacity: 1;
     visibility: visible;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .project-popup-inner {
